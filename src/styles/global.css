@@ -1,0 +1,20 @@
+html {
+  font-size: 20px;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #111;
+  background: #f7b801;
+}
+
+::selection {
+  color: #111;
+  background: #f7b801;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #5183f5;
+  border-bottom: 2px solid #e2eafd;
+}
