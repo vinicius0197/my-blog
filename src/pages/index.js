@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import styled from 'styled-components'
 import Layout from "../components/layout/layout"
 import { Title } from "./styles"
@@ -54,11 +54,15 @@ class LastArticles extends React.Component {
 
           <div>
             {this.props.posts.allMarkdownRemark.edges.slice(0, MAXIMUM_POSTS).map(( {node} ) => (
-              <SinglePost>
-                <PostTitle>
-                  {node.frontmatter.title}{" "} - <PostDate>{node.frontmatter.date}</PostDate>
-                </PostTitle>
-              </SinglePost>
+              <Link
+                to={node.fields.slug}
+              >
+                <SinglePost>
+                  <PostTitle>
+                    {node.frontmatter.title}{" "} - <PostDate>{node.frontmatter.date}</PostDate>
+                  </PostTitle>
+                </SinglePost>
+              </Link>
             ))}
           </div>
         </PostsContainer>
@@ -93,6 +97,9 @@ export const query = graphql`
         frontmatter {
           title
           date(formatString: "DD MMMM, YYYY")
+        }
+        fields {
+          slug
         }
         excerpt
       }
