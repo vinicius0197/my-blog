@@ -42,18 +42,35 @@ const Item = styled.li`
   }
 `;
 
+const Footer = styled.footer`
+  font-size: 0.9rem;
+  display: flex;
+
+`;
+
+
 export default ({ children }) => (
   <BaseLayout>
-    <NavContainer>
-      <Navbar>
-        <TitleBar>Vinicius Costa</TitleBar>
-        <LinkList>
-          <Item>About</Item>
-          <Item>Posts</Item>
-          <Item>Contact</Item>
-        </LinkList>
-      </Navbar>
-    </NavContainer>
-      {children}
+    <div>
+      <NavContainer>
+        <Navbar>
+          <TitleBar>Vinicius Costa</TitleBar>
+          <LinkList>
+            <Item>About</Item>
+            <Item>Posts</Item>
+            <Item>Contact</Item>
+          </LinkList>
+        </Navbar>
+      </NavContainer>
+        {children}
+    </div>
+
+    <Footer>
+      <LinkList>
+        <Item>Newsletter</Item>
+        <Item>RSS</Item>
+        <Item>Patreon</Item>
+      </LinkList>
+    </Footer>
   </BaseLayout>
 )
