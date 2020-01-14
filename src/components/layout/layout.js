@@ -49,7 +49,7 @@ export default ({ children }) => (
         <TitleBar>Vinicius Costa</TitleBar>
         <LinkList>
           <Item>About</Item>
-          <Item>Articles</Item>
+          <Item>Posts</Item>
           <Item>Contact</Item>
         </LinkList>
       </Navbar>
