@@ -1,15 +1,20 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout/layout"
+import styled from 'styled-components'
+
+const PostContainer = styled.div`
+  margin-top: 1rem;
+`;
 
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <div>
+      <PostContainer>
         <h1>{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
+      </PostContainer>
     </Layout>
   )
 }
