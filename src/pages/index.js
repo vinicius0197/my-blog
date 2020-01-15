@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import styled from 'styled-components'
 import Layout from "../components/layout/layout"
-import { Title } from "./styles"
+import { Title } from "../styles/styles"
 import Wrapper from "../components/cover/cover"
 import { About } from "../components/cover/styles"
 

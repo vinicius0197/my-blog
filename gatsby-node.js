@@ -13,7 +13,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
-exports.createPages = async ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
   const result = await graphql(`
     query {
@@ -35,7 +35,7 @@ exports.createPages = async ({ graphql, actions }) => {
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
       path: i === 0 ? `/posts` : `/posts/${i + 1}`,
-      component: path.resolve('./src/pages/posts.js'),
+      component: path.resolve('./src/templates/posts-template.js'),
       context: {
         limit: postsPerPage,
         skip: i * postsPerPage,
@@ -45,7 +45,7 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  posts.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve(`./src/templates/blog-post.js`),
