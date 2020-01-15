@@ -77,22 +77,24 @@ export default ({ data }) => {
   )
 }
 
-export const query = graphql`
-{
-  allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-    totalCount
-    edges {
-      node {
-        frontmatter {
-          title
-          date(formatString: "DD MMMM, YYYY")
+export const blogListQuery = graphql`
+  query blogListQuery($skip: Int!, $limit: Int!) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: $limit
+      skip: $skip
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            date(formatString: "DD MMMM, YYYY")
+          }
         }
-        fields {
-          slug
-        }
-        excerpt
       }
     }
   }
-}
 `
