@@ -23,7 +23,7 @@ export default () => {
 
         <AboutBody>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit nihil quae hic iure esse debitis facere, veritatis reprehenderit. Nesciunt itaque nostrum magnam! Vel ab, repellat deleniti vitae magnam aliquam?
-
+          Hey.
         </AboutBody>
 
       </AboutContainer>
