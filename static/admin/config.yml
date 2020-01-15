@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: https://github.com/vinicius0197/my-blog
+  repo: vinicius0197/my-blog
 
 media_folder: static/assets
 public_folder: assets
