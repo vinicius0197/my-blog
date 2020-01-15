@@ -1,12 +1,7 @@
 import React from "react"
+import Layout from "../components/layout/layout"
 import { Link, graphql } from "gatsby"
 import styled from 'styled-components'
-import Layout from "../components/layout/layout"
-import { Title } from "./styles"
-import Wrapper from "../components/cover/cover"
-import { About } from "../components/cover/styles"
-
-const MAXIMUM_POSTS = 5
 
 const SinglePost = styled.div`
   height: 2.5rem;
@@ -50,10 +45,10 @@ class LastArticles extends React.Component {
   render() {
     return(
         <PostsContainer>
-          <h2>Recents Posts</h2>
+          <h2>All Posts</h2>
 
           <div>
-            {this.props.posts.allMarkdownRemark.edges.slice(0, MAXIMUM_POSTS).map(( {node} ) => (
+            {this.props.posts.allMarkdownRemark.edges.slice(0, 10).map(( {node} ) => (
               <Link
                 to={node.fields.slug}
               >
@@ -71,13 +66,8 @@ class LastArticles extends React.Component {
 }
 
 export default ({ data }) => {
-  return(
+  return (
     <Layout>
-      <Wrapper>
-        <Title>Hi, I'm Vinicius</Title>
-        <About>I'm a software developer and blah blah blah blah blah blah blah blah blah <a href="link">Open Source</a></About>
-      </Wrapper>
-
       <LastArticles
         posts={data}
       >

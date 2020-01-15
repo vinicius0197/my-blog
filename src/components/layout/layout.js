@@ -54,11 +54,29 @@ export default ({ children }) => (
     <div>
       <NavContainer>
         <Navbar>
-          <TitleBar>Vinicius Costa</TitleBar>
+          <Link
+            to="/"
+          >
+            <TitleBar>Vinicius Costa</TitleBar>
+          </Link>
           <LinkList>
-            <Item>About</Item>
-            <Item>Posts</Item>
-            <Item>Contact</Item>
+            <Link
+              to="/about/"
+            >
+              <Item>About</Item>
+            </Link>
+
+            <Link
+              to="/posts/"
+            >
+              <Item>Posts</Item>
+            </Link>
+
+            <Link
+              to="/contact/"
+            >
+              <Item>Contact</Item>
+            </Link>
           </LinkList>
         </Navbar>
       </NavContainer>

@@ -5,6 +5,7 @@ import styled from 'styled-components'
 
 const PostContainer = styled.div`
   margin-top: 1rem;
+  color: #404040;
 `;
 
 export default ({ data }) => {
