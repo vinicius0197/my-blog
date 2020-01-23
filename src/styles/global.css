@@ -17,3 +17,10 @@ a {
   font-weight: 600;
   color: #5183f5;
 }
+
+/* SPECIFIC STYLING */
+.about_image {
+  transform: rotate(90deg);
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+}
