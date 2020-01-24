@@ -86,7 +86,11 @@ export default ({ children }) => (
     <Footer>
       <LinkList>
         <Item>Newsletter</Item>
-        <Item>RSS</Item>
+        <Link
+          to="/rss.xml/"
+        >
+          <Item>RSS</Item>
+        </Link>
         <Item>Patreon</Item>
       </LinkList>
     </Footer>

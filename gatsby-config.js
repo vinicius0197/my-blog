@@ -1,7 +1,13 @@
 const path = require('path')
 
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://tender-keller-01e436.netlify.com/`,
+    description: 'My personal blog',
+    title: 'Vinicius Costa'
+  },
   plugins: [
+    `gatsby-plugin-feed`,
     `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-source-filesystem`,
