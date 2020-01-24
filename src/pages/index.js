@@ -75,7 +75,10 @@ export default ({ data }) => {
     <Layout>
       <Wrapper>
         <Title>Hi, I'm Vinicius</Title>
-        <About>I'm a software developer and blah blah blah blah blah blah blah blah blah <a href="link">Open Source</a></About>
+        <About>
+          I'm a software developer and I'm here to document my thoughts and projects.
+          Check my <a href="https://github.com/vinicius0197">GitHub</a>.
+        </About>
       </Wrapper>
 
       <LastArticles
