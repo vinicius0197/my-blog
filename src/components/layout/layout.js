@@ -61,19 +61,19 @@ export default ({ children }) => (
           </Link>
           <LinkList>
             <Link
-              to="/about/"
+              to="/about"
             >
               <Item>About</Item>
             </Link>
 
             <Link
-              to="/posts/"
+              to="/posts"
             >
               <Item>Posts</Item>
             </Link>
 
             <Link
-              to="/contact/"
+              to="/contact"
             >
               <Item>Contact</Item>
             </Link>
@@ -86,11 +86,11 @@ export default ({ children }) => (
     <Footer>
       <LinkList>
         <Item>Newsletter</Item>
-        <Link
-          to="/rss.xml/"
+        <a
+          href="/rss.xml"
         >
           <Item>RSS</Item>
-        </Link>
+        </a>
         <Item>Patreon</Item>
       </LinkList>
     </Footer>
