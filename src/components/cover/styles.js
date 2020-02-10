@@ -8,6 +8,12 @@ export const Wrapper = styled.section`
   border-radius: 0.5em;
   margin-top: 1em;
   justify-content: center;
+  width: 50rem;
+  @media (max-width: 1085px) {
+    flex-direction: column;
+    align-items: center;
+    width: 25rem;
+  }
 `;
 
 export const About = styled.div`
@@ -17,9 +23,10 @@ export const About = styled.div`
 
 export const Avatar = styled.div`
   background-image: url(${myAvatar});
-  height: 6rem;
-  width: 6rem;
+  height: 150px;
+  width: 150px;
   background-repeat: no-repeat;
+  background-position: top center;
   background-size: cover;
   border-radius: 50%;
 `;
