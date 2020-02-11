@@ -47,7 +47,7 @@ class LastArticles extends React.Component {
         <PostsContainer>
           <h2>All Posts</h2>
 
-          <div>
+          <React.Fragment>
             {this.props.posts.allMarkdownRemark.edges.slice(0, 10).map(( {node} ) => (
               <Link
                 to={node.fields.slug}
@@ -59,7 +59,7 @@ class LastArticles extends React.Component {
                 </SinglePost>
               </Link>
             ))}
-          </div>
+          </React.Fragment>
         </PostsContainer>
     )
   }

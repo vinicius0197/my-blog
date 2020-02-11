@@ -51,7 +51,7 @@ const Footer = styled.footer`
 
 export default ({ children }) => (
   <BaseLayout>
-    <div>
+    <div style={ { width: '100%' } }>
       <NavContainer>
         <Navbar>
           <Link
