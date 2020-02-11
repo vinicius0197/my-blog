@@ -9,4 +9,8 @@ export const BaseLayout = styled.div`
   flex-direction: column;
   width: 50%;
   margin: 0 auto;
+
+  @media (max-width: 850px) {
+    width: 90%;
+  }
 `;

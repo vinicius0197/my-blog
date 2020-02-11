@@ -32,6 +32,10 @@ const PostTitle = styled.div`
 const PostDate = styled.div`
   padding: 0 0.5rem;
   color: #bbb;
+
+  @media (max-width: 950px) {
+    display: none;
+  }
 `;
 
 const PostsContainer = styled.div`
@@ -54,7 +58,7 @@ class LastArticles extends React.Component {
               >
                 <SinglePost>
                   <PostTitle>
-                    {node.frontmatter.title}{" "} - <PostDate>{node.frontmatter.date}</PostDate>
+                    {node.frontmatter.title}{" "} <PostDate> - {node.frontmatter.date}</PostDate>
                   </PostTitle>
                 </SinglePost>
               </Link>

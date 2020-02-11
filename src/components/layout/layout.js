@@ -15,6 +15,10 @@ const TitleBar = styled.h3`
 const NavContainer = styled.nav`
   display: block;
   padding-top: 1rem;
+
+  @media (max-width: 950px) {
+    margin-bottom: 1em;
+  }
 `;
 
 const Navbar = styled.nav`

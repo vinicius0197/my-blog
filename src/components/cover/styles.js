@@ -14,6 +14,18 @@ export const Wrapper = styled.section`
     align-items: center;
     width: 25rem;
   }
+
+  @media (max-width: 950px) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0.5em;
+  }
+
+  @media (max-width: 500px) {
+    
+  }
+
 `;
 
 export const About = styled.div`
