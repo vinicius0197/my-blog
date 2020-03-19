@@ -1,6 +1,7 @@
 ---
 title: "Why have a blog?"
 date: "2020-01-24"
+category: web-dev
 ---
 I've been thinking about starting a blog for some time lately. I always would put it for later, though, mainly because I was busy working at other stuff. Also, I didn't know what I would blog about. I mean, there's a lot of software developers blogging out there about a bunch of stuff, so what's the point, right?
 

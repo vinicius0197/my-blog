@@ -1,6 +1,7 @@
 ---
 title: "Monthly Review: February 2020"
 date: "2020-03-02"
+category: misc
 ---
 
 This last month I've dedicated myself to learning React and Redux. All my last posts here reflect that. I had already used React on some projects before, but I was a little rusty and needed a refresh. Also, it looked like a good way to start learning Redux.
