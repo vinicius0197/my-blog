@@ -1,5 +1,118 @@
-import styled from 'styled-components'
+// Keep specific stylings here
+import styled from 'styled-components';
+import myAvatar from '../assets/avatar.jpeg';
 
+// Layout
+export const BaseLayout = styled.div`
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+
+  @media (max-width: 850px) {
+    width: 90%;
+  }
+`;
+
+export const TitleBar = styled.h3`
+  padding: 0.2rem;
+  cursor: pointer;
+  color: #333;
+  &:hover {
+    color: #111;
+  }
+`;
+
+export const NavContainer = styled.nav`
+  display: block;
+  padding-top: 1rem;
+
+  @media (max-width: 950px) {
+    margin-bottom: 1em;
+  }
+`;
+
+export const Navbar = styled.nav`
+  padding-top: 0.5rem;
+  height: 3rem;
+  padding-top: 0.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+export const LinkList = styled.ul`
+  list-style-type: none;
+  display: flex;
+  margin-top: 0px;
+  flex-direction: row;
+`;
+
+export const Item = styled.li`
+  padding: 0 0.9rem;
+  cursor: pointer;
+  color: rgba(0,0,0,.45);
+  &:hover {
+    color: #111;
+  }
+`;
+
+export const Footer = styled.footer`
+  font-size: 0.9rem;
+  display: flex;
+`;
+
+// Cover
+
+export const Wrapper = styled.section`
+  display: flex;
+  padding: 2em;
+  background: #f0f0f0;
+  border-radius: 0.5em;
+  margin-top: 1em;
+  justify-content: center;
+  width: 50rem;
+  @media (max-width: 1085px) {
+    flex-direction: column;
+    align-items: center;
+    width: 25rem;
+  }
+
+  @media (max-width: 950px) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0.5em;
+  }
+
+  @media (max-width: 500px) {
+    
+  }
+
+`;
+
+export const About = styled.div`
+  font-size: 1.2em;
+  margin-left: 1.8em;
+`;
+
+export const Avatar = styled.div`
+  background-image: url(${myAvatar});
+  height: 150px;
+  width: 150px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  border-radius: 50%;
+`;
+
+
+
+// Posts
 export const Title = styled.h1`
   font-size: 2.1em;
   text-align: left;
@@ -48,4 +161,18 @@ export const PostDate = styled.div`
 
 export const PostsContainer = styled.div`
   margin-top: 1rem;
+`;
+
+// About Page
+export const AboutTitle = styled.h2`
+  color: #111;
+`;
+
+export const AboutContainer = styled.div`
+  margin-top: 2rem;
+`;
+
+export const AboutBody = styled.div`
+  display: block;
+  color: #404040;
 `;

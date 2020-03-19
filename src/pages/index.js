@@ -1,59 +1,32 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-import styled from 'styled-components'
-import Layout from "../components/layout/layout"
-import { Title } from "../styles/styles"
-import Wrapper from "../components/cover/cover"
-import { About } from "../components/cover/styles"
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import { Helmet } from 'react-helmet';
 
-const MAXIMUM_POSTS = 5
+import Layout from '../components/layout/layout';
+import Wrapper from '../components/cover/cover';
+import {
+  SinglePost,
+  PostTitle,
+  PostDate,
+  PostsContainer,
+  About,
+  Title
+} from '../styles/styles';
 
-const SinglePost = styled.div`
-  height: 2.5rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 0.5rem;
-  border-radius: 4px;
-  cursor: pointer;
-  border: 2px solid transparent;
-  &:hover {
-    border: 2px solid #f2f2f2;
-    background: #f2f2f2;
-  }
-`;
-
-const PostTitle = styled.div`
-  display: flex;
-  font-size: 1.2rem;
-  line-height: 1rem;
-  font-weight: 600;
-  color: rgba(0,0,0,.6);
-  ${SinglePost}:hover & {
-    color: #111;
-  }
-`;
-
-const PostDate = styled.div`
-  padding: 0 0.5rem;
-  color: #bbb;
-
-  @media (max-width: 950px) {
-    display: none;
-  }
-`;
-
-const PostsContainer = styled.div`
-  margin-top: 1rem;
-`;
+const MAXIMUM_POSTS = 5;
 
 class LastArticles extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
   render() {
     return(
         <PostsContainer>
+          <Helmet>
+            <meta charSet="utf-8" />
+            <title>Vinicius Costa</title>
+            <link rel="canonical" href="https://vcsilva.com/" />
+          </Helmet>
           <h2>Recents Posts</h2>
 
           <div>
@@ -70,13 +43,18 @@ class LastArticles extends React.Component {
             ))}
           </div>
         </PostsContainer>
-    )
+    );
   }
 }
 
 export default ({ data }) => {
   return(
     <Layout>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Vinicius Costa</title>
+        <link rel="canonical" href="https://vcsilva.com/" />
+      </Helmet>
       <Wrapper>
         <Title>Hi, I'm Vinicius</Title>
         <About>
@@ -88,10 +66,9 @@ export default ({ data }) => {
       <LastArticles
         posts={data}
       >
-        teste
       </LastArticles>
     </Layout>
-  )
+  );
 }
 
 export const query = graphql`
@@ -112,4 +89,4 @@ export const query = graphql`
     }
   }
 }
-`
+`;

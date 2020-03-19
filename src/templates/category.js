@@ -1,7 +1,10 @@
+// This file handles blog posts categories and renders the category page
+
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 
-import Layout from "../components/layout/layout";
+import Layout from '../components/layout/layout';
 import PostsList from '../components/PostsList/';
 import { PostsContainer } from '../styles/styles';
 
@@ -9,12 +12,17 @@ const CategoryTemplate = ({ location, pageContext, data }) => {
   const { category } = pageContext;
   return(
     <Layout>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Categories - Vinicius Costa</title>
+        <link rel="canonical" href="https://vcsilva.com/" />
+      </Helmet>
       <PostsContainer>
         <h1>Posts in Category <u>{ category }</u> </h1>
         <PostsList postEdges={data.allMarkdownRemark.edges} />
       </PostsContainer>
     </Layout>
-  )
+  );
 };
 
 export const pageQuery = graphql`
@@ -41,6 +49,6 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
 
-export default CategoryTemplate
+export default CategoryTemplate;

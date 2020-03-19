@@ -1,6 +1,9 @@
-import React from "react"
-import Layout from "../components/layout/layout"
-import { Link, graphql } from "gatsby"
+// This file renders the 'all posts' page
+import React from 'react';
+import { Helmet } from 'react-helmet';
+
+import Layout from '../components/layout/layout';
+import { Link, graphql } from 'gatsby';
 import {
   SinglePost,
   PostTitle,
@@ -10,11 +13,16 @@ import {
 
 class LastArticles extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
   render() {
     return(
         <PostsContainer>
+          <Helmet>
+            <meta charSet="utf-8" />
+            <title>Posts - Vinicius Costa</title>
+            <link rel="canonical" href="https://vcsilva.com/" />
+          </Helmet>
           <h2>All Posts</h2>
 
           <React.Fragment>
@@ -31,8 +39,8 @@ class LastArticles extends React.Component {
             ))}
           </React.Fragment>
         </PostsContainer>
-    )
-  }
+    );
+  };
 }
 
 export default ({ data }) => {
@@ -40,11 +48,10 @@ export default ({ data }) => {
     <Layout>
       <LastArticles
         posts={data}
-      >
-        
+      >    
       </LastArticles>
     </Layout>
-  )
+  );
 }
 
 export const blogListQuery = graphql`
@@ -67,4 +74,4 @@ export const blogListQuery = graphql`
       }
     }
   }
-`
+`;

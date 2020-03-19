@@ -1,6 +1,9 @@
-import React from "react"
-import { Link } from "gatsby"
-import { Wrapper, Avatar } from "./styles"
+import React from 'react';
+
+import {
+  Wrapper,
+  Avatar
+} from '../../styles/styles';
 
 export default ({ children }) => (
   <div>

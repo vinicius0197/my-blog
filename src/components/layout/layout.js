@@ -1,57 +1,15 @@
-import React from "react"
-import { Link } from "gatsby"
-import {BaseLayout} from "./styles"
-import styled from 'styled-components'
+import React from 'react';
+import { Link } from 'gatsby';
 
-const TitleBar = styled.h3`
-  padding: 0.2rem;
-  cursor: pointer;
-  color: #333;
-  &:hover {
-    color: #111;
-  }
-`;
-
-const NavContainer = styled.nav`
-  display: block;
-  padding-top: 1rem;
-
-  @media (max-width: 950px) {
-    margin-bottom: 1em;
-  }
-`;
-
-const Navbar = styled.nav`
-  padding-top: 0.5rem;
-  height: 3rem;
-  padding-top: 0.4rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-`;
-
-const LinkList = styled.ul`
-  list-style-type: none;
-  display: flex;
-  margin-top: 0px;
-  flex-direction: row;
-`;
-
-const Item = styled.li`
-  padding: 0 0.9rem;
-  cursor: pointer;
-  color: rgba(0,0,0,.45);
-  &:hover {
-    color: #111;
-  }
-`;
-
-const Footer = styled.footer`
-  font-size: 0.9rem;
-  display: flex;
-
-`;
-
+import {
+  BaseLayout,
+  TitleBar,
+  NavContainer,
+  Navbar,
+  LinkList,
+  Item,
+  Footer
+} from '../../styles/styles';
 
 export default ({ children }) => (
   <BaseLayout>
@@ -95,7 +53,6 @@ export default ({ children }) => (
         >
           <Item>RSS</Item>
         </a>
-        <Item>Patreon</Item>
       </LinkList>
     </Footer>
   </BaseLayout>

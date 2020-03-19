@@ -1,23 +1,21 @@
-import React from "react"
-import Layout from "../components/layout/layout"
-import styled from 'styled-components'
+import React from 'react';
+import { Helmet } from 'react-helmet';
 
-const AboutTitle = styled.h2`
-  color: #111;
-`;
-
-const AboutContainer = styled.div`
-  margin-top: 2rem;
-`;
-
-const AboutBody = styled.div`
-  display: block;
-  color: #404040;
-`;
+import Layout from '../components/layout/layout';
+import {
+  AboutTitle,
+  AboutContainer,
+  AboutBody
+} from '../styles/styles';
 
 export default () => {
   return (
     <Layout>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>About - Vinicius Costa</title>
+        <link rel="canonical" href="https://vcsilva.com/" />
+      </Helmet>
       <AboutContainer>
         <AboutTitle>About me</AboutTitle>
 
@@ -45,5 +43,5 @@ export default () => {
 
       </AboutContainer>
     </Layout>
-  )
+  );
 }
