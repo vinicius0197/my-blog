@@ -1,0 +1,37 @@
+#mc_embed_signup {
+  display: flex;
+  margin-top: 1rem;
+}
+
+#mce-EMAIL {
+  background: #FDFDFD;
+  border: 1px solid #BBC6D1;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+}
+
+.newsletter-title {
+  margin-bottom: 0.5rem;
+}
+
+.paragraph-description {
+  margin-bottom: 0.5rem;
+  color: rgba(0,0,0,.6);
+}
+
+.button {
+  background-color: #5183f5;
+  color: #eee;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newsletter-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

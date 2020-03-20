@@ -4,6 +4,8 @@ import { Helmet } from 'react-helmet';
 
 import Layout from '../components/layout/layout';
 import Wrapper from '../components/cover/cover';
+import MailCard from '../components/MailCard';
+
 import {
   SinglePost,
   PostTitle,
@@ -62,6 +64,8 @@ export default ({ data }) => {
           my thoughts here at this blog.
         </About> 
       </Wrapper>
+
+      <MailCard />
 
       <LastArticles
         posts={data}
