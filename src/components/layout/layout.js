@@ -47,7 +47,7 @@ export default ({ children }) => (
 
     <Footer>
       <LinkList>
-      <a href="https://mailchi.mp/f0a801736282/viniciuscosta">
+      <a href="https://tinyletter.com/viniciuscosta">
         <Item>Newsletter</Item>
       </a>
         <a
