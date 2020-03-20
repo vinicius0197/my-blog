@@ -16,6 +16,10 @@ export const BaseLayout = styled.div`
   @media (max-width: 850px) {
     width: 90%;
   }
+
+  @media (max-width: 450px) {
+    width: 95%;
+  }
 `;
 
 export const TitleBar = styled.h3`
@@ -34,6 +38,10 @@ export const NavContainer = styled.nav`
   @media (max-width: 950px) {
     margin-bottom: 1em;
   }
+
+  @media (max-width: 450px) {
+    padding-top: 0.4rem;
+  }
 `;
 
 export const Navbar = styled.nav`
@@ -50,6 +58,10 @@ export const LinkList = styled.ul`
   display: flex;
   margin-top: 0px;
   flex-direction: row;
+
+  @media (max-width: 450px) {
+    justify-content: left;
+  }
 `;
 
 export const Item = styled.li`
@@ -58,6 +70,14 @@ export const Item = styled.li`
   color: rgba(0,0,0,.45);
   &:hover {
     color: #111;
+  }
+
+  @media (max-width: 450px) {
+    padding: 0 0.4rem;
+  }
+
+  @media (max-width: 350px) {
+    padding: 0 0.2rem;
   }
 `;
 

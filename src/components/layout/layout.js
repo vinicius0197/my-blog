@@ -47,7 +47,9 @@ export default ({ children }) => (
 
     <Footer>
       <LinkList>
+      <a href="https://mailchi.mp/f0a801736282/viniciuscosta">
         <Item>Newsletter</Item>
+      </a>
         <a
           href="/rss.xml"
         >
