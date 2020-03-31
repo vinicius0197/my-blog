@@ -1,6 +1,6 @@
 ---
 title: "How to Learn"
-date: "2020-03-30"
+date: "2020-03-31"
 category: learning
 ---
 
