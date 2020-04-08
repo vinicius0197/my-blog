@@ -8,6 +8,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-feed`,
+    `gatsby-plugin-twitter`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,
     {

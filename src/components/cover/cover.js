@@ -9,7 +9,7 @@ export default ({ children }) => (
   <div>
     <Wrapper>
       <Avatar />
-      <div>
+      <div style={{ width: '85%' }}>
         {children}
       </div>
     </Wrapper>

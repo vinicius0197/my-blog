@@ -10,7 +10,7 @@ export const BaseLayout = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
 
   @media (max-width: 850px) {
@@ -95,7 +95,7 @@ export const Wrapper = styled.section`
   border-radius: 0.5em;
   margin-top: 1em;
   justify-content: center;
-  width: 50rem;
+  width: 40rem;
   @media (max-width: 1085px) {
     flex-direction: column;
     align-items: center;
@@ -122,8 +122,8 @@ export const About = styled.div`
 
 export const Avatar = styled.div`
   background-image: url(${myAvatar});
-  height: 150px;
-  width: 150px;
+  height: 120px;
+  width: 120px;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
