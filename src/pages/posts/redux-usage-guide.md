@@ -1,7 +1,7 @@
 ---
 title: "My Redux usage guide"
 date: "2020-02-13"
-category: web-dev
+category: web-development
 ---
 
 Redux is a very useful state-management library for UI development. When you are dealing with React alone and your app starts to get really complex, managing state becomes very difficult.

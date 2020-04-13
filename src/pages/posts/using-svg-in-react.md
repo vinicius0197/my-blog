@@ -1,7 +1,7 @@
 ---
 title: "Using SVGs in your React app"
 date: "2020-01-25"
-category: web-dev
+category: web-development
 ---
 SVGs are really great. They are easy to use and are commonplace in most web apps nowadays. But there are a lot of options for adding them to your application when you use a framework like React, for instance.
 

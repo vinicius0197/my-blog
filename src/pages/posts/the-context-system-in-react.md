@@ -1,7 +1,7 @@
 ---
 title: "Getting started with the Context System in React"
 date: "2020-02-25"
-category: web-dev
+category: web-development
 ---
 
 In a nutshell, you can think about the Context API (in case you are unfamiliar with it) as a way to send data from a parent component down to any

@@ -1,7 +1,7 @@
 ---
 title: "Using Hooks in React"
 date: "2020-03-07"
-category: web-dev
+category: web-development
 ---
 
 Hooks are one of the great additions to the React library. I've used class-based components for a long time even after Hooks were first introduced, but I've been really keen on using Hooks on my last projects.

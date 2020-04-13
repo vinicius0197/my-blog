@@ -13,7 +13,7 @@ import {
 
 export default ({ children }) => (
   <BaseLayout>
-    <div style={ { width: '100%' } }>
+    <div style={ { width: '80%' } }>
       <NavContainer>
         <Navbar>
           <Link

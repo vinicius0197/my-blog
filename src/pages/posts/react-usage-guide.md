@@ -1,7 +1,7 @@
 ---
 title: "My React usage guide"
 date: "2020-02-11"
-category: web-dev
+category: web-development
 ---
 
 React is a really cool library. Building web-applications has became so much easier to me since learning it and using it in some projects.
