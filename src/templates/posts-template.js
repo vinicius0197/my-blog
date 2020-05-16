@@ -16,29 +16,29 @@ class LastArticles extends React.Component {
     super(props);
   }
   render() {
-    return(
-        <PostsContainer>
-          <Helmet>
-            <meta charSet="utf-8" />
-            <title>Posts - Vinicius Costa</title>
-            <link rel="canonical" href="https://vcsilva.com/" />
-          </Helmet>
-          <h2>All Posts</h2>
+    return (
+      <PostsContainer>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Posts - Vinicius Costa</title>
+          <link rel="canonical" href="https://vcsilva.com/" />
+        </Helmet>
+        <h2>All Posts</h2>
 
-          <React.Fragment>
-            {this.props.posts.allMarkdownRemark.edges.slice(0, 10).map(( {node} ) => (
-              <Link
-                to={node.fields.slug}
-              >
-                <SinglePost>
-                  <PostTitle>
-                    {node.frontmatter.title}{" "} <PostDate> - {node.frontmatter.date}</PostDate>
-                  </PostTitle>
-                </SinglePost>
-              </Link>
-            ))}
-          </React.Fragment>
-        </PostsContainer>
+        <React.Fragment>
+          {this.props.posts.allMarkdownRemark.edges.slice(0, 10).map(({ node }) => (
+            <Link
+              to={node.fields.slug}
+            >
+              <SinglePost>
+                <PostTitle>
+                  {node.frontmatter.title}{" "} <PostDate> - {node.frontmatter.date}</PostDate>
+                </PostTitle>
+              </SinglePost>
+            </Link>
+          ))}
+        </React.Fragment>
+      </PostsContainer>
     );
   };
 }
@@ -48,7 +48,7 @@ export default ({ data }) => {
     <Layout>
       <LastArticles
         posts={data}
-      >    
+      >
       </LastArticles>
     </Layout>
   );

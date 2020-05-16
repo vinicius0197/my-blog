@@ -9,7 +9,7 @@ import {
 const PostsListCard = ({ frontmatter, fields, excerpt }) => {
   const title = frontmatter.title || fields.slug;
 
-  return(
+  return (
     <Link
       to={`/${fields.slug}/`}
     >

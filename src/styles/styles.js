@@ -157,12 +157,16 @@ export const SinglePost = styled.div`
     border: 2px solid #f2f2f2;
     background: #f2f2f2;
   }
+
+  @media (max-width: 450px) {
+    height: auto;
+  }
 `;
 
 export const PostTitle = styled.div`
-  display: flex;
+  display: inline-block;
   font-size: 1.2rem;
-  line-height: 1rem;
+  line-height: 1.3rem;
   font-weight: 600;
   color: rgba(0,0,0,.6);
   ${SinglePost}:hover & {
@@ -172,7 +176,9 @@ export const PostTitle = styled.div`
 
 export const PostDate = styled.div`
   padding: 0 0.5rem;
+  display: inline-block;
   color: #bbb;
+  white-space: nowrap;
 
   @media (max-width: 950px) {
     display: none;

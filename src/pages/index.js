@@ -22,35 +22,35 @@ class LastArticles extends React.Component {
     super(props);
   }
   render() {
-    return(
-        <PostsContainer>
-          <Helmet>
-            <meta charSet="utf-8" />
-            <title>Vinicius Costa</title>
-            <link rel="canonical" href="https://vcsilva.com/" />
-          </Helmet>
-          <h2>Recents Posts</h2>
+    return (
+      <PostsContainer>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Vinicius Costa</title>
+          <link rel="canonical" href="https://vcsilva.com/" />
+        </Helmet>
+        <h2>Recents Posts</h2>
 
-          <div>
-            {this.props.posts.allMarkdownRemark.edges.slice(0, MAXIMUM_POSTS).map(( {node} ) => (
-              <Link
-                to={node.fields.slug}
-              >
-                <SinglePost>
-                  <PostTitle>
-                    {node.frontmatter.title}{" "} <PostDate> - {node.frontmatter.date}</PostDate>
-                  </PostTitle>
-                </SinglePost>
-              </Link>
-            ))}
-          </div>
-        </PostsContainer>
+        <div>
+          {this.props.posts.allMarkdownRemark.edges.slice(0, MAXIMUM_POSTS).map(({ node }) => (
+            <Link
+              to={node.fields.slug}
+            >
+              <SinglePost>
+                <PostTitle>
+                  {node.frontmatter.title}{" "} <PostDate> - {node.frontmatter.date}</PostDate>
+                </PostTitle>
+              </SinglePost>
+            </Link>
+          ))}
+        </div>
+      </PostsContainer>
     );
   }
 }
 
 export default ({ data }) => {
-  return(
+  return (
     <Layout>
       <Helmet>
         <meta charSet="utf-8" />
@@ -62,7 +62,7 @@ export default ({ data }) => {
         <About>
           I'm a software developer based in Brasilia, Brasil. You can find me at <a href="https://github.com/vinicius0197">Github</a> and check
           my thoughts here at this blog.
-        </About> 
+        </About>
       </Wrapper>
 
       <MailCard />
