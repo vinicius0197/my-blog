@@ -1,6 +1,6 @@
 // Keep specific stylings here
-import styled from 'styled-components';
-import myAvatar from '../assets/avatar.jpeg';
+import styled from "styled-components"
+import myAvatar from "../assets/avatar.jpeg"
 
 // Layout
 export const BaseLayout = styled.div`
@@ -8,9 +8,9 @@ export const BaseLayout = styled.div`
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
-  width: 50%;
+  width: 35%;
   margin: 0 auto;
 
   @media (max-width: 850px) {
@@ -20,7 +20,7 @@ export const BaseLayout = styled.div`
   @media (max-width: 450px) {
     width: 95%;
   }
-`;
+`
 
 export const TitleBar = styled.h3`
   padding: 0.2rem;
@@ -29,11 +29,12 @@ export const TitleBar = styled.h3`
   &:hover {
     color: #111;
   }
-`;
+`
 
 export const NavContainer = styled.nav`
   display: block;
   padding-top: 1rem;
+  width: 100%;
 
   @media (max-width: 950px) {
     margin-bottom: 1em;
@@ -42,7 +43,7 @@ export const NavContainer = styled.nav`
   @media (max-width: 450px) {
     padding-top: 0.4rem;
   }
-`;
+`
 
 export const Navbar = styled.nav`
   padding-top: 0.5rem;
@@ -51,7 +52,7 @@ export const Navbar = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-`;
+`
 
 export const LinkList = styled.ul`
   list-style-type: none;
@@ -62,12 +63,12 @@ export const LinkList = styled.ul`
   @media (max-width: 450px) {
     justify-content: left;
   }
-`;
+`
 
 export const Item = styled.li`
   padding: 0 0.9rem;
   cursor: pointer;
-  color: rgba(0,0,0,.45);
+  color: rgba(0, 0, 0, 0.45);
   &:hover {
     color: #111;
   }
@@ -79,12 +80,12 @@ export const Item = styled.li`
   @media (max-width: 350px) {
     padding: 0 0.2rem;
   }
-`;
+`
 
 export const Footer = styled.footer`
   font-size: 0.9rem;
   display: flex;
-`;
+`
 
 // Cover
 
@@ -110,15 +111,13 @@ export const Wrapper = styled.section`
   }
 
   @media (max-width: 500px) {
-    
   }
-
-`;
+`
 
 export const About = styled.div`
   font-size: 1.2em;
   margin-left: 1.8em;
-`;
+`
 
 export const Avatar = styled.div`
   background-image: url(${myAvatar});
@@ -128,9 +127,7 @@ export const Avatar = styled.div`
   background-position: top center;
   background-size: cover;
   border-radius: 50%;
-`;
-
-
+`
 
 // Posts
 export const Title = styled.h1`
@@ -142,7 +139,7 @@ export const Title = styled.h1`
     margin: 0.2em;
     text-align: center;
   }
-`;
+`
 
 export const SinglePost = styled.div`
   height: 2.5rem;
@@ -161,18 +158,18 @@ export const SinglePost = styled.div`
   @media (max-width: 450px) {
     height: auto;
   }
-`;
+`
 
 export const PostTitle = styled.div`
   display: inline-block;
   font-size: 1.2rem;
   line-height: 1.3rem;
   font-weight: 600;
-  color: rgba(0,0,0,.6);
+  color: rgba(0, 0, 0, 0.6);
   ${SinglePost}:hover & {
     color: #111;
   }
-`;
+`
 
 export const PostDate = styled.div`
   padding: 0 0.5rem;
@@ -183,22 +180,22 @@ export const PostDate = styled.div`
   @media (max-width: 950px) {
     display: none;
   }
-`;
+`
 
 export const PostsContainer = styled.div`
   margin-top: 1rem;
-`;
+`
 
 // About Page
 export const AboutTitle = styled.h2`
   color: #111;
-`;
+`
 
 export const AboutContainer = styled.div`
   margin-top: 2rem;
-`;
+`
 
 export const AboutBody = styled.div`
   display: block;
   color: #404040;
-`;
+`

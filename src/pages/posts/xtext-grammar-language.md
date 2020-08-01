@@ -1,18 +1,18 @@
 ---
-title: "Creating a Domain Specific Language with Xtext: The Grammar"
+title: "Creating a DSL with Xtext: The Grammar"
 date: "2020-05-15"
 category: programming-languages
 ---
 
 Lately, I've been studying a lot about [Xtext](https://www.eclipse.org/Xtext/). If you are unfamiliar with it, this is a framework for creating programming languages integrated with the Eclipse IDE. It comes with a lot of stuff out of the box to make building both general-purpose and domain-specific languages way easier.
 
-To give myself a brief introduction to the framework, I've thought about following along the proposed implementation of an expression language described in the book *Implementing Domain-Specific Languages with Xtext and Xtend* by Lorenzo Bettini, which I've been using for reference and study. This expression language should have enough features to introduce us to the core elements of the framework while at the same time being simple enough so that it can be implemented rather quickly (in a few blog posts, I hope). I intend to present some basics about the framework for those who never used it, but I would first recommend to attempt this very useful [15 minute introduction](https://www.eclipse.org/Xtext/documentation/102_domainmodelwalkthrough.html) to Xtext which is very useful to grasp the core elements of the framework.
+To give myself a brief introduction to the framework, I've thought about following along the proposed implementation of an expression language described in the book _Implementing Domain-Specific Languages with Xtext and Xtend_ by Lorenzo Bettini, which I've been using for reference and study. This expression language should have enough features to introduce us to the core elements of the framework while at the same time being simple enough so that it can be implemented rather quickly (in a few blog posts, I hope). I intend to present some basics about the framework for those who never used it, but I would first recommend to attempt this very useful [15 minute introduction](https://www.eclipse.org/Xtext/documentation/102_domainmodelwalkthrough.html) to Xtext which is very useful to grasp the core elements of the framework.
 
 You will find the complete code from the author itself at [this repository](https://github.com/LorenzoBettini/packtpub-xtext-book-2nd-examples/tree/master/org.example.xbase.expressions.parent). The code in there contains a lot more to it them what I will be covering in these posts, but I hope that the material here is enough to introduce the most important aspects of Xtext.
 
 ### First of all, what is a DSL?
 
-A DSL is a Domain Specific Language. Differently from a General Purpose Language (like Python, Javascript and C++), a DSL can only deal with stuff that it was designed for. There are lots of examples of DSLs out there: [Dot](https://www.graphviz.org/doc/info/lang.html) for defining graphs with *Graphviz*, SQL for databases, Latex for document layout, etc...
+A DSL is a Domain Specific Language. Differently from a General Purpose Language (like Python, Javascript and C++), a DSL can only deal with stuff that it was designed for. There are lots of examples of DSLs out there: [Dot](https://www.graphviz.org/doc/info/lang.html) for defining graphs with _Graphviz_, SQL for databases, Latex for document layout, etc...
 
 Martin Fowler is a big proponent of Domain Specific Languages and I suggest you take a look at some of his [blog posts](https://martinfowler.com/dsl.html).
 
@@ -36,22 +36,22 @@ There's also an alternative for Xtext called [MPS](https://www.jetbrains.com/mps
 
 The grammar is at the core of a programming language implementation. It describes how your language works and behaves and how end users will deal with it. You also need to write some kind of parser so that, later on, a compiler or interpreter can turn statements written with it into useful machine code.
 
-Luckly for us, XText already comes with a parser bundled up and a way to define those grammars. After you've installed it in your Eclipse (you can find download links [here](https://www.eclipse.org/Xtext/download.html)), you can create a new Xtext project by going to *File -> New -> Project -> Xtext -> Xtext Project*. Choose a name and a file extension for your project, and Xtext will generate a bunch of projects inside your workspace. Right now, we are going to focus on the first project. Assuming you named your project *expressions*, this is going to be *org.example.expressions*.
+Luckly for us, XText already comes with a parser bundled up and a way to define those grammars. After you've installed it in your Eclipse (you can find download links [here](https://www.eclipse.org/Xtext/download.html)), you can create a new Xtext project by going to _File -> New -> Project -> Xtext -> Xtext Project_. Choose a name and a file extension for your project, and Xtext will generate a bunch of projects inside your workspace. Right now, we are going to focus on the first project. Assuming you named your project _expressions_, this is going to be _org.example.expressions_.
 
-Now, just look for a file called *Expressions.xtext*. This is a very important file because it contains the base definitions for your language grammar.
+Now, just look for a file called _Expressions.xtext_. This is a very important file because it contains the base definitions for your language grammar.
 
 If you open this file, you will notice that Xtext already created a simple "Hello World" grammar in there, that probably looks something like this:
 
 ```java
 grammar org.example.expressions.Expressions
     with org.eclipse.xtext.common.Terminals
- 
-generate expressions 
+
+generate expressions
     "http://www.example.org/expressions/Expressions"
- 
+
 Model:
     greetings+=Greeting*;
-  
+
 Greeting:
     'Hello' name=ID '!';
 ```
@@ -67,7 +67,7 @@ Model:
     greetings+=Greeting*;
 ```
 
-The is called a *rule* in the context of our grammar. The first rule in a grammar is always used as the start rule. This rule is called `Model` and it contains a feature called `greetings`, which consists of a collection of `Greeting` elements. The `+=` implies that this is, in fact, a collection, while the operator `*` indicates that the number of elements in this collection is arbitrary.
+The is called a _rule_ in the context of our grammar. The first rule in a grammar is always used as the start rule. This rule is called `Model` and it contains a feature called `greetings`, which consists of a collection of `Greeting` elements. The `+=` implies that this is, in fact, a collection, while the operator `*` indicates that the number of elements in this collection is arbitrary.
 
 Right below that, we find the definition for `Greeting`:
 
@@ -75,6 +75,7 @@ Right below that, we find the definition for `Greeting`:
 Greeting:
     'Hello' name=ID '!';
 ```
+
 In Xtext, string literals correspond to keywords in the DSL. Right there, `'Hello'` would be a keyword in this sample language, as well as the `'!'` symbol. A valid statement in this language would start with `Hello`, followed by an `ID`, which comes from the `Terminals` grammar. Think about this `ID` as a placeholder for some non-terminal symbol that the user would write with this language. We are attributing this symbol to the `name` feature.
 
 Now, let's start changing those rules to reflect the expression language we want to develop. It's important to begin with some kind of specification. What is the purpose of this language and what it looks like?
@@ -147,7 +148,7 @@ Unfortunately that rule would result in an Xtext error message. That's because X
 
 > We say that a rule is left-recursive when the first symbol of the rule is non-terminal and refers to the rule itself.
 
-We can solve this problem by using a technique called *left factoring*. To do that, we will have to deal with operator precedence and associativity.
+We can solve this problem by using a technique called _left factoring_. To do that, we will have to deal with operator precedence and associativity.
 
 We will use the following trick for getting rid of the left recursion:
 
@@ -175,7 +176,7 @@ Expression:
 	Atomic ({Plus.left=current} '+' right=Expression)?;
 ```
 
-Where `Plus.left=current` is an [assigned action](https://www.eclipse.org/Xtext/documentation/301_grammarlanguage.html#grammar-actions). That does the trick. If the code inside `(...)?` can be parsed, the result tree will consist of a `Plus` object where `left` is assigned to a subtree previously parsed by the `Atomic` rule and right to the subtree parsed by the `Expression` rule. 
+Where `Plus.left=current` is an [assigned action](https://www.eclipse.org/Xtext/documentation/301_grammarlanguage.html#grammar-actions). That does the trick. If the code inside `(...)?` can be parsed, the result tree will consist of a `Plus` object where `left` is assigned to a subtree previously parsed by the `Atomic` rule and right to the subtree parsed by the `Expression` rule.
 
 As for now, our `Expression` allows for right associativity (since it's right recursive). Languages like Java use left associativity, so let's modify our grammar to use that instead:
 
@@ -194,9 +195,9 @@ Expression:
 )*;
 ```
 
-Here, the assigned action will be selected according to the parsed operator. 
+Here, the assigned action will be selected according to the parsed operator.
 
-That's enough for associativity. Next, we must establish *precedence*. Addition and subtraction have the same arithmetic precedence, but if we add multiplication and division we must deal with that issue.
+That's enough for associativity. Next, we must establish _precedence_. Addition and subtraction have the same arithmetic precedence, but if we add multiplication and division we must deal with that issue.
 
 To define precedence, we write the rule for the operator with less precedence in terms of the operator with higher precedence.
 
@@ -207,7 +208,7 @@ Expression: PlusOrMinus;
 
 PlusOrMinus returns Expression:
     MulOrDiv (
-        ({Plus.left=current} '+' | 
+        ({Plus.left=current} '+' |
             {Minus.left=current} '-')
         right=MulOrDiv
 )*;

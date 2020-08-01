@@ -3,9 +3,14 @@ html {
   font-size: 20px;
 }
 
-input, button, submit { border:none; } 
+input,
+button,
+submit {
+  border: none;
+}
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: #111;
   background: #f7b801;
 }

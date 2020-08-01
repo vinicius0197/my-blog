@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React from "react"
+import { Link } from "gatsby"
 
 import {
   BaseLayout,
@@ -8,51 +8,41 @@ import {
   Navbar,
   LinkList,
   Item,
-  Footer
-} from '../../styles/styles';
+  Footer,
+} from "../../styles/styles"
 
 export default ({ children }) => (
   <BaseLayout>
-    <div style={ { width: '80%' } }>
+    <div>
       <NavContainer>
         <Navbar>
-          <Link
-            to="/"
-          >
+          <Link to="/">
             <TitleBar>Vinicius Costa</TitleBar>
           </Link>
           <LinkList>
-            <Link
-              to="/about"
-            >
+            <Link to="/about">
               <Item>About</Item>
             </Link>
 
-            <Link
-              to="/posts"
-            >
+            <Link to="/posts">
               <Item>Posts</Item>
             </Link>
 
-            <Link
-              to="/contact"
-            >
+            <Link to="/contact">
               <Item>Contact</Item>
             </Link>
           </LinkList>
         </Navbar>
       </NavContainer>
-        {children}
+      {children}
     </div>
 
     <Footer>
       <LinkList>
-      <a href="https://tinyletter.com/viniciuscosta">
-        <Item>Newsletter</Item>
-      </a>
-        <a
-          href="/rss.xml"
-        >
+        <a href="https://tinyletter.com/viniciuscosta">
+          <Item>Newsletter</Item>
+        </a>
+        <a href="/rss.xml">
           <Item>RSS</Item>
         </a>
       </LinkList>
