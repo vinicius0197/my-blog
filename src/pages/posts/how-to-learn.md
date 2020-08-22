@@ -4,47 +4,34 @@ date: "2020-03-31"
 category: learning
 ---
 
-Learning new things is important, as we all know. Learning new things is also difficult. It takes time and effort and is oftentimes stressful. If you aren't particularly excited about the topic at hand, it can be even more so.
+I've recently read Barbara Oakley's *A Mind for Numbers*. It's a guide focused on teaching people (mainly college students) the basic principles of studying for subjects like math and science, but the advice given in the book is pretty universal and could easily be applied to other fields of study.
 
-Thinking back to my own studies for the past few years, I can remember countless times when learning was a chore. And mind you, I actually enjoy learning. Those struggles probably reflect more my own lack of a proper study method than any inherent difficulty of the subject itself. I would procrastinate and not be very efficient, which means that when exams came, I would get stressed out while cramming late nights.
+I made some notes while reading it and decided to compile the main ideas of the book in a blog post that I could refer back to in the future. This is that guide. I hope you find it useful as well.
 
-Not a good situation.
-
-And this isn't just for college students. I believe that learning *how to learn* is one of the most important skills anyone could cultivate in their personal and professional lives.
-
-![Person Writing](https://i.imgur.com/rbOlJ64.jpg)
-*Photo by Green Chameleon on Unsplash*
-
-The benefits of being a good learner are obvious, but I could break down the main one into: **a)** being efficient in your learning **b)** minimizing stress and **c)** enjoying the process a little bit more.
-
-Yes, I do believe you can find some joy in your own learning. People think that they can only get good on things they enjoy doing when the opposite is just as likely: you can start enjoying things when you get good at them.
-
-Okay, you say, I get it. But how do I learn the right way? What am I doing wrong?
-
-So, I've recently read Barbara Oakley's *A Mind for Numbers* after a friend suggested it to me. You may have heard about this book already. In a nutshell, it's a guide focused on teaching people (mainly college students) the basic principles for studying subjects like math and science. The advice given in the book is pretty universal, actually, and you could easily apply it to other fields of study. I made some notes while reading it and decided to compile the main ideas of the book in a guide that I could refer back to in the future. This is that guide. I hope you find it useful as well.
-
-None of those tips and ideas will be groundbreaking stuff. You may have heard about them already. You may have even used some of them without thinking about it. But I think that the main value from the book is how it presents a structured, battle-tested way to learn. If you have the opportunity, I recommend you read it.
+None of those tips and ideas will be groundbreaking stuff. You may have heard about them already, but I think that the main value from the book is how it presents a structured way to learn new stuff. If you have the opportunity, I highly recommend you reading it.
 
 Otherwise, here's the quick and straight to the point version.
 
 **Table of Contents:**
-1. [Focused mode and diffuse mode](#focused-and-diffuse-mode)
-2. [Use recall](#use-recall)
-3. [Using spaced repetition](#spaced-repetition)
-4. [Creating conceptual chunks](#conceptual-chunks)
-5. [Procrastination](#procrastination)
-6. [Focusing on the process](#focusing-on-process)
-7. [Memorization](#memorization)
-8. [Make things simple](#make-things-simple)
-9. [Experiment with your own learning](#experiment)
+
+- [Focused mode and diffuse mode <a name="focused-and-diffuse-mode"></a>](#focused-mode-and-diffuse-mode-)
+- [Use recall <a name="use-recall"></a>](#use-recall-)
+- [Using spaced repetition <a name="spaced-repetition"></a>](#using-spaced-repetition-)
+- [Creating conceptual chunks <a name="conceptual-chunks"></a>](#creating-conceptual-chunks-)
+- [Procrastination <a name="procrastination"></a>](#procrastination-)
+- [Focusing on the process <a name="focusing-on-process"></a>](#focusing-on-the-process-)
+- [Memorization <a name="memorization"></a>](#memorization-)
+- [Make things simple <a name="make-things-simple"></a>](#make-things-simple-)
+- [Experiment with your own learning <a name="experiment"></a>](#experiment-with-your-own-learning-)
+- [Main takeaways](#main-takeaways)
 
 ### Focused mode and diffuse mode <a name="focused-and-diffuse-mode"></a>
 
 A big part of the book is on discussing the differences between focused and diffuse work. The focused mode is the direct approach of solving a problem, a.k.a doing the hard work. The diffuse mode is more subtle. It's what allows you to see the big-picture and gain new insights.
 
-Most of us know what focused work is. We have done that already. But you've probably also had experiences with diffuse mode insights. When after tirelessly trying to solve a difficult math problem for two hours you have an 'aha' moment while jogging down the park, or a solution to some bug in your code pops up in your head when you are bathing. Thing is: your brain continue working on your problems even when you aren't aware of it, and by doing so, it allows you to solve problems in novel, more creative ways.
+You've probably experienced the effects of diffuse mode when, after tirelessly trying to solve a difficult problem for hours at end, you have an insight moment while washing the dishes or a solution to some bug in your code pops up in your head when you are exercising. Our brain continues to work on those problems even when we aren't aware of it, and by doing so, it allows us to solve problems in more creative ways.
 
-That's important because of something called the *Einstellung Effect*. You've probably experienced this already: you think about a way of solving a problem and then you are stuck with that way of thinking and can't direct your thought to better solutions. You keep trying to solve the problem the same way, even if it's wrong.
+That's really important because of something called the *Einstellung Effect*. You've probably experienced this already: you think about a way of solving a problem and then you are stuck with that way of thinking and can't direct your thought to better solutions. You keep trying to solve the problem the same way, even if it's wrong.
 
 The main takeaway from this is that you need to allow yourself to cool down, relax and take a break. As the author puts it:
 
@@ -58,52 +45,37 @@ The author advocates that this is a terrible way to study. That may be shocking 
 
 That's why the author suggests that you use *recall* instead of just plain reading. It's actually very simple and a lot of people do this (many without even realizing it). Instead of passively reading new material, you formulate questions based on it that you can inquire yourself on later.
 
-As an example, if you are studying math and come across the definition of a binary relation, you can try to write down a question such as: What is the definition of a binary relation? And the next time you study you try to recall what it is. Recalling here is key. It allows no illusions. If you don't really know it, you can't fake it. It's also highly effective because you are always testing yourself on whether or not you've already nailed the material.
-
-Constantly testing yourself, by using recall practice, is one of the most effective ways to study.
-
-There are a lot of ways of approaching the recall method: you can try flashcards or use Anki (I will talk more about Anki later in this post). Ali Abdaal has a bunch of cool tips on his YouTube channel on the recall practice. I think [this one](https://www.youtube.com/watch?v=YHJzSbLiQNs%5D) is really useful if you are just getting started with this.
+As an example, if you are studying math and come across an important theorem, you can try to write down a question such as: How is thing X defined? The next time you sit down to study, try to recall what it is. Recalling here is key. It allows no illusions. If you don't really know it, you can't fake it. It's also highly effective because you are always testing yourself on whether or not you've already nailed the material.
 
 ### Using spaced repetition <a name="spaced-repetition"></a>
 
-I really like this one. I was familiar with the idea of spaced repetition already but never tried to implement it before reading the book.
-This is one of the fundamental ideas of the software **Anki** (together with recall practice). 
+I really like this one. I was familiar with the idea of spaced repetition already but never tried to implement it before reading the book. This is one of the fundamental ideas of the software **Anki** (together with recall practice).
 
-Basically, you try to space your study at increasingly larger periods. If you learned something new today, you review it tomorrow. Then
-again after 3 days, and 7 days, and so on...
+Basically, you try to space your study at increasingly larger periods. If you learned something new today, you review it tomorrow. Then again after 3 days, and 7 days, and so on...
 
-Why? You may ask. Because there's this thing called a forgetting curve:
-
-![forgetting curve](https://upload.wikimedia.org/wikipedia/commons/4/4e/ForgettingCurve.svg)
+Why? You may ask. Because there's this thing called a [forgetting curve](https://en.wikipedia.org/wiki/Forgetting_curve).
 
 This curve represents how information in your brain is forgotten over time if there's no attempt whatsoever to retain it. Spaced repetition tries to fix that. By remembering stuff at just the point you are almost forgetting it, you strengthen your memory and make that piece of information more accessible in the long run.
 
-Again, Anki is an excellent way to use this concept in practice. As previously hinted, Anki is just a collection of a bunch of (digital) flashcards and an algorithm to calculate, based on your previous attempts at recalling the content of each card, when to show it again to you. The algorithm is built in such a way that difficult topics (the ones you get wrong frequently) will be shown to you regularly, while
-information what is rock solid will appear sparingly.
-
-You don't actually need Anki (or any similar software) to practice using spaced repetition. You can keep track of the days you need to
-review some topic by yourself. But having the practicality of the algorithm doing that work for you surely helps.
+Again, Anki is an excellent way to use this concept in practice. As previously hinted, Anki is just a collection of (digital) flashcards together with an algorithm to calculate, based on your previous attempts at recalling the content of each card, when to show it again to you. The algorithm is built in such a way that difficult topics (the ones you get wrong frequently) will be shown to you regularly, while information that is rock solid will appear sparingly.
 
 ### Creating conceptual chunks <a name="conceptual-chunks"></a>
 
 What's the best way of solving a puzzle?
 
-![Puzzle](https://i.imgur.com/PYFH7fQ.jpg)
-*Photo by Gabriel Crismariu on Unsplash*
-
-I would say that there are two main components to this: understanding the big-picture (the image you're trying to form) and also how the smaller pieces fit together with eacher other.
+I would say that there are two main components to this: understanding the big-picture (the image you're trying to form) and also how the smaller pieces fit together with one another.
 
 If you only use the big-picture approach you won't be able to solve it. You just know what it is supposed to look like when it's done.
 
-If you just focus on how the small pieces fit together, you are going to have a hard time figuring out what the puzzle is supposed to represent. Things start to get disconnected and you don't know what you are trying to achieve.
+But if you just focus on how the small pieces fit together, you are now going to have a hard time figuring out what the puzzle is supposed to represent. You don't know what you are trying to achieve.
 
 Problem-solving is just like solving a puzzle. If you try to understand any topic, you need to attack it from both angles: bottom-up and top-down.
 
-Top-down gives you the big-picture: what's this all about? Why it's important? Where will it be used? How those concepts are related to one another? It's about *when* to use a technique.
+Top-down gives you the big-picture: what's this all about? Why it's important? Where will it be used? How those concepts are related to one another? It's about _when_ to use a technique.
 
-Bottom-up gives you the practical ways of using the knowledge and makes sure you will have access to it when needed. It's about *how* to use a certain technique.
+Bottom-up gives you the practical ways of using the knowledge and makes sure you will have access to it when needed. It's about _how_ to use a certain technique.
 
-Chunking is the process of breaking down concepts into smaller pieces that you can later use to solve problems. You start by getting a good overview on the subject (that's the big picture or top-down approach) and then proceed to break it down into smaller pieces that you can fully compreheend.
+Chunking is the process of breaking down concepts into smaller pieces that you can use later to solve problems. You start by getting a good overview on the subject (that's the big picture or top-down approach) and then proceed to break it down into smaller pieces.
 
 The idea of forming a conceptual chunk is the following:
 
@@ -145,9 +117,9 @@ Which brings us to the next topic...
 
 If you are learning something, you probably have some kind of outcome in mind. Be it passing an exam, being able to speak fluently in some foreign language or acquiring some new skill to help you land a good job. Those are all valid possible outcomes for learning something new.
 
-But day to day, it's way easier to focus on just following a routine, some kind of process that you establish for yourself and can easily follow. A lot of people can cram for an exam 8 hours straight the night before a test. You may pass the exam, you may even get good grades, but it's just not sustainable.
+But day to day, it's way easier to focus on just following a routine, some kind of process that you establish for yourself and can easily follow. A lot of people can cram for an exam 8 hours straight the night before a test. You may pass the exam, you may even get good grades, but it's just not sustainable in the long run.
 
-The key idea is having a simple routine and not going overboard with it. Half an hour of solid, focused study each day is way more productive than long study sessions the day before an exam. Remember the diffuse mode we've discussed? That's where it comes into play. Having the time between study sessions to let your brain relax is crucial to learning.
+The key idea is having a simple routine and not going overboard with it. Half an hour of solid, focused study each day is way more productive than long study sessions the day before an exam. Remember the diffuse mode we've discussed? That's where it comes into play. Having the time between study sessions to let your brain relax is a crucial part of learning.
 
 A good tip is just scheduling a half an hour block each day for your learning. Decide beforehand what you are going to study, and when then time comes, allowing yourself to simply follow the process.
 
@@ -157,23 +129,17 @@ I think that this one can be a little bit controversial. For some people, it may
 
 I don't believe in memorizing every small detail of the material you are studying, or even worse, memorizing stuff you don't actually understand.
 
-But memorizing stuff about material that you *do* understand and have internalized can really deepen your knowledge. In a way, it's part of the chunking process that we've talked about earlier.
+But memorizing stuff about material that you _do_ understand and have internalized can really deepen your knowledge. In a way, it's part of the chunking process that we've talked about earlier.
 
 For memorizing things, I think the best approach is by using spaced-repetition with [Anki](https://apps.ankiweb.net). I've already hinted at it previously, but now let's introduce it properly. I know it's kinda ugly, but it simply works and is very simple to understand. Anki is basically a way to automate all this process of active recall and spaced repetition we've been talking about and it has become a central part of my study flow. I will simply jot notes directly into it by creating new cards for the subject I'm studying.
 
-There are a lot of resources on using Anki on the internet. I really recommend it.
-
 ### Make things simple <a name="make-things-simple"></a>
 
-There's this thing called the Feynman Method, named after famous physicist Richard Feynman. It's a very simple mental method, and can be fully explained by looking at the following flowchart:
-
-![Feynman Method Chart](https://i.imgur.com/3DEO2vl.jpg)
+There's this thing called the Feynman Method, named after famous physicist Richard Feynman. It's a very simple method: when you learn something, try to make it so simple that you could explain it to a small kid.
 
 The beauty of the Feynman Method is that it doesn't allow us to hide our weak points. When we try to explain something that we don't fully comprehend, we usually gloss over the more difficult parts in a hand-wavy way. Whenever you notice yourself doing this, stop, identify where the gaps in your knowledge are and try to simplify those enough sou you could (theoretically at least) teach it to a 6-years old toddler.
 
-Better yet, for my fellow programmers, is to combine this method with the famous *rubber duck debugging technique*. For those who don't know, rubber duck debugging is the (kinda humorous, I guess) process of obtaining a rubber duck, placing it in your working desk and trying to explain to the poor thing, line by line, what your code is supposed to do. The idea is that, by trying to explain code in simpler terms, line by line, you eventually find out why it doesn't work as you expected it to.
-
-The bottom line is: try to eliminate any gaps in your knowledge by putting everything you know in simple terms. If you are using unnecessarily difficult language to explain something, you probably don't understand it.
+Try to eliminate any gaps in your knowledge by putting everything you know in simple terms. If you are using unnecessarily difficult language to explain something, you probably don't understand it.
 
 ### Experiment with your own learning <a name="experiment"></a>
 
@@ -197,7 +163,3 @@ There's more stuff in the book than what I've described here, but I think those 
 Using Anki has really been a game-changer for my own learning. It's really great because it encapsulates a lot of those tips in just one piece of software. It has recall practice and spaced repetition built-in, and you can be creative with it and use it for chunking pieces of knowledge.
 
 Also, in the end, it all comes down to practicing the discipline of making process, even if it's just a little bit, every day.
-
-
-
-
