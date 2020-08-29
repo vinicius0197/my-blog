@@ -1,19 +1,19 @@
 // This file renders the 'all posts' page
-import React from 'react';
-import { Helmet } from 'react-helmet';
+import React from "react"
+import { Helmet } from "react-helmet"
 
-import Layout from '../components/layout/layout';
-import { Link, graphql } from 'gatsby';
+import Layout from "../components/layout/layout"
+import { Link, graphql } from "gatsby"
 import {
   SinglePost,
   PostTitle,
   PostDate,
-  PostsContainer
-} from '../styles/styles';
+  PostsContainer,
+} from "../styles/styles"
 
 class LastArticles extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
   render() {
     return (
@@ -26,32 +26,28 @@ class LastArticles extends React.Component {
         <h2>All Posts</h2>
 
         <React.Fragment>
-          {this.props.posts.allMarkdownRemark.edges.slice(0, 10).map(({ node }) => (
-            <Link
-              to={node.fields.slug}
-            >
+          {this.props.posts.allMarkdownRemark.edges.map(({ node }) => (
+            <Link to={node.fields.slug}>
               <SinglePost>
                 <PostTitle>
-                  {node.frontmatter.title}{" "} <PostDate> - {node.frontmatter.date}</PostDate>
+                  {node.frontmatter.title}{" "}
+                  <PostDate> - {node.frontmatter.date}</PostDate>
                 </PostTitle>
               </SinglePost>
             </Link>
           ))}
         </React.Fragment>
       </PostsContainer>
-    );
-  };
+    )
+  }
 }
 
 export default ({ data }) => {
   return (
     <Layout>
-      <LastArticles
-        posts={data}
-      >
-      </LastArticles>
+      <LastArticles posts={data}></LastArticles>
     </Layout>
-  );
+  )
 }
 
 export const blogListQuery = graphql`
@@ -74,4 +70,4 @@ export const blogListQuery = graphql`
       }
     }
   }
-`;
+`
