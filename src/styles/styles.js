@@ -13,6 +13,10 @@ export const BaseLayout = styled.div`
   width: 35%;
   margin: 0 auto;
 
+  @media (max-width: 1500px) {
+    width: 60%;
+  }
+
   @media (max-width: 850px) {
     width: 90%;
   }
@@ -100,7 +104,7 @@ export const Wrapper = styled.section`
   @media (max-width: 1085px) {
     flex-direction: column;
     align-items: center;
-    width: 25rem;
+    width: auto;
   }
 
   @media (max-width: 950px) {
