@@ -19,7 +19,7 @@ That's a strange concept coming from other operating systems such as Windows, wh
 
 ### what does this really means?
 
-Actually, what this statement actually says is that everything is a "stream of bytes", which you can access through the filesystem.
+What this statement actually says is that everything is a "stream of bytes", which you can access through the filesystem.
 
 In practice, this means that every IO operations uses the file system in some way, by means of something called a "file descriptor".
 
