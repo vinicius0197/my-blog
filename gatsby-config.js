@@ -2,8 +2,10 @@ const path = require("path")
 
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://tender-keller-01e436.netlify.com/`,
-    description: "My personal blog",
+    siteUrl: `https://vcsilva.com/`,
+    description:
+      "Hi! I'm Vinicius, and this is my blog. I'm a software developer and here you cand find all my\
+    posts. Subscribe to my newsletter to receive my content in your inbox!",
     title: "Vinicius Costa",
   },
   plugins: [
