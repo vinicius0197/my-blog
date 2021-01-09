@@ -16,7 +16,7 @@ export default ({ children }) => (
     <div>
       <NavContainer>
         <Navbar>
-          <Link to="/">
+          <Link style={{ textDecoration: "none" }} to="/">
             <TitleBar>Vinicius Costa</TitleBar>
           </Link>
           <LinkList>

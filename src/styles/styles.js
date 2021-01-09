@@ -27,9 +27,9 @@ export const BaseLayout = styled.div`
 `
 
 export const TitleBar = styled.h3`
-  padding: 0.2rem;
   cursor: pointer;
   color: #333;
+  margin: 0;
   &:hover {
     color: #111;
   }
@@ -87,6 +87,7 @@ export const Item = styled.li`
 `
 
 export const Footer = styled.footer`
+  margin-top: 3rem;
   font-size: 0.9rem;
   display: flex;
 `
@@ -119,7 +120,7 @@ export const Wrapper = styled.section`
 `
 
 export const About = styled.div`
-  font-size: 1.2em;
+  font-size: 0.9em;
   margin-left: 1.8em;
 `
 
@@ -137,7 +138,8 @@ export const Avatar = styled.div`
 export const Title = styled.h1`
   font-size: 2.1em;
   text-align: left;
-  margin-left: 1em;
+  margin-top: 0;
+  margin-left: 0.8em;
 
   @media (max-width: 950px) {
     margin: 0.2em;
@@ -166,7 +168,7 @@ export const SinglePost = styled.div`
 
 export const PostTitle = styled.div`
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1em;
   line-height: 1.3rem;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.6);
@@ -200,6 +202,7 @@ export const AboutContainer = styled.div`
 `
 
 export const AboutBody = styled.div`
+  font-size: 0.9em;
   display: block;
   color: #404040;
 `

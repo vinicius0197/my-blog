@@ -1,8 +1,9 @@
 import Typography from "typography"
-import funstonTheme from "typography-theme-funston"
+// import funstonTheme from "typography-theme-funston"
+import parnassusTheme from "typography-theme-parnassus"
 
-funstonTheme.baseLineHeight = 1.5
-const typography = new Typography(funstonTheme)
+parnassusTheme.baseLineHeight = 1.7
+const typography = new Typography(parnassusTheme)
 
 export default typography
 export const rhythm = typography.rhythm

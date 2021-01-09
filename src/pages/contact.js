@@ -1,7 +1,7 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
+import React from "react"
+import { Helmet } from "react-helmet"
 
-import Layout from '../components/layout/layout';
+import Layout from "../components/layout/layout"
 
 export default () => {
   return (
@@ -11,13 +11,15 @@ export default () => {
         <title>Contact - Vinicius Costa</title>
         <link rel="canonical" href="https://vcsilva.com/" />
       </Helmet>
-      <div>Find me at: </div>
-      <div>
-        <a href="https://github.com/vinicius0197">Github</a>
-      </div>
-      <div>
-        <a href="https://www.linkedin.com/in/viniciuscostasilva/">LinkedIn</a>
+      <div style={{ fontSize: "0.9em" }}>
+        <div>Find me at: </div>
+        <div>
+          <a href="https://github.com/vinicius0197">Github</a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/viniciuscostasilva/">LinkedIn</a>
+        </div>
       </div>
     </Layout>
-  );
+  )
 }

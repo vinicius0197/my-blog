@@ -26,12 +26,13 @@
 }
 
 .newsletter-title {
-  margin-top: 0.5rem;
+  margin-top: 2rem;
   margin-bottom: 0.5rem;
 }
 
 .paragraph-description {
   margin-bottom: 0.5rem;
+  font-size: 0.9em;
   color: rgba(0, 0, 0, 0.6);
 }
 

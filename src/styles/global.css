@@ -24,6 +24,7 @@ a {
   text-decoration: none;
   font-weight: 600;
   color: #5183f5;
+  box-shadow: 0 0 0 0 !important;
 }
 
 /* SPECIFIC STYLING */
