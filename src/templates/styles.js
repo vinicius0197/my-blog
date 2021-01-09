@@ -8,6 +8,13 @@ export const PostContainer = styled.div`
   width: 100%;
 `
 
+export const PostTitle = styled.h1`
+  margin-bottom: "0.5rem";
+  @media (max-width: 800px) {
+    font-size: 1.5rem;
+  }
+`
+
 export const CategoriesContainer = styled.div`
   display: inline-block;
   background: #f2f2f2;

@@ -33,6 +33,10 @@ export const TitleBar = styled.h3`
   &:hover {
     color: #111;
   }
+
+  @media (max-width: 800px) {
+    font-size: 1em;
+  }
 `
 
 export const NavContainer = styled.nav`
@@ -171,6 +175,7 @@ export const PostTitle = styled.div`
   font-size: 1em;
   line-height: 1.3rem;
   font-weight: 600;
+  margin-bottom: 1em;
   color: rgba(0, 0, 0, 0.6);
   ${SinglePost}:hover & {
     color: #111;
