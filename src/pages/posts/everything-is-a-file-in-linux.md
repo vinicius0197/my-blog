@@ -53,8 +53,8 @@ As you can see from the output, I have a simple `.csv` file that is just a regul
 
 More interesting is that processes running on your machine are represented as files too. You can check that by yourself by starting any process on the background (by using the ampersand `&` at the end of the command). For instance, I'm going to run the Vim on the background:
 
-```bash
-root@vinicius:~# vim &
+```shell{promptUser: root}{promptHost: host}{outputLines: 2}
+vim &
 [4] 822091
 ```
 
@@ -66,7 +66,8 @@ Here, each running process is represented by a folder. Since our instance of Vim
 
 By running `ls -l` inside this directory, you will notice that there are a lot of files in there:
 
-```bash
+```shell{promptUser: root}{promptHost: host}{outputLines: 2-17}
+ls -l
 -r--r--r-- 1 root root 0 set 19 14:44 arch_status
 dr-xr-xr-x 2 root root 0 set 19 14:44 attr
 -rw-r--r-- 1 root root 0 set 19 14:44 autogroup
